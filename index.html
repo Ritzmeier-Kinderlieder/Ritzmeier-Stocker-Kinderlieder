@@ -3,35 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine GitHub Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hauptseite</title>
+    <style>
+        /* Hintergrundbild für die gesamte Seite */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: url('hintergrund.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 3em;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        /* Buttons */
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Willkommen auf meiner GitHub Page!</h1>
-        <p>Dies ist meine persönliche Seite.</p>
-    </header>
-
-    <main>
-        <section>
-            <h2>Über mich</h2>
-            <p>Hier kannst du einen kurzen Text über dich schreiben.</p>
-        </section>
-
-        <section>
-            <h2>Projekte</h2>
-            <ul>
-                <li>Projekt 1</li>
-                <li>Projekt 2</li>
-                <li>Projekt 3</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Dein Name</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <h1>Willkommen auf meiner Webseite</h1>
+    <div class="button-container">
+        <a href="seite1.html" class="button">Zur Seite 1</a>
+        <a href="seite2.html" class="button">Zur Seite 2</a>
+    </div>
 </body>
 </html>
