@@ -17,45 +17,37 @@
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.3);
             z-index: 0;
         }
+		.Sektion-1 {
+			position: relative;
+			text-align: center;
+			padding-top: 10px;
+		}
 
-        h1 {
-            font-size: 3em;
-            color: red;
-			margin-bottom: 50px;
-            z-index: 1;
-            position: absolute;
-			top: 5%;
-			left: 50%
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        .Sektion-1 h1 {
+            font-size: 3vw;
+            color: #FFFFCC;
+			margin-bottom: 10px;
         }
 
-        h2 {
-            font-size: 2em;
-            color: blue;
-			margin-bottom: 50px;
-            z-index: 1;
-            position: absolute;
-			top: 40%;
-			left: 50%
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+		.Sektion-1 .text1 {
+			font-size: 2vw;
+            color: white;
+			margin-bottom: 20px;
         }
 		
         /* Button-Container Seite*/
-        .button-container-seite {
+        .Sektion-1 .button-container-seite {
             display: flex;
             gap: 30px;
             z-index: 1;
-			position: absolute;
-			top: 25%;
-			left: 20%
-            /* position: relative; */
+			margin-bottom: 20px;
         }
 
         /* Stil für Buttons Seite*/
-        .button-seite {
+        .Sektion-1 .button-seite {
             padding: 18px 35px;
             font-size: 1.2em;
             color: white;
@@ -69,25 +61,40 @@
         }
 
         /* Hover-Effekt Seite*/
-        .button-seite:hover {
+        .Sektion-1 .button-seite:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.4);
             background: linear-gradient(135deg, #2575fc, #6a11cb);
         }
+
+		.Sektion-2 {
+			position: relative;
+			text-align: left;
+			padding: 40px 20px;
+		}
+		
+        .Sektion-2 h2 {
+            font-size: 3vw;
+            color: #FFFFCC;
+			margin-bottom: 10px;
+        }
+		
+		.Sektion-2 .text2 {
+			font-size: 2vw;
+			color: white;
+			margin-bottom: 15px;
+		}
 		
 	        /* Button-Container Link*/
-        .button-container-link {
+        .Sektion-2 .button-container-link {
             display: flex;
             gap: 30px;
             z-index: 1;
-			position: absolute;
-			top: 50%;
-			left: 20%
-            /* position: relative; */
+			margin-bottom: 20px;
         }
 
         /* Stil für Buttons Link*/
-        .button-link {
+        .Sektion-2 .button-link {
             padding: 18px 35px;
             font-size: 1.2em;
             color: white;
@@ -101,31 +108,35 @@
         }
 
         /* Hover-Effekt Link*/
-        .button-link:hover {
+        .Sektion-2 .button-link:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.4);
             background: linear-gradient(135deg, #2575fc, #6a11cb);
         }	
-		/* Textzeile */
-		.textzeile {
-			font-size: 40px;
-			color: white;
-			margin-top: 20px;
-		}
+		
     </style>
 </head>
 <body>
-    <h1>Willkommen auf meiner Webseite</h1>
-    <div class="button-container-seite">
-        <a href="Seite1-hörproben.html" class="button-seite">Hörproben</a>
-        <a href="Seite2-überdasBuch.html" class="button-seite">Über das Buch</a>
-		<a href="Seite3-überMich.html" class="button-seite">Über mich</a>
+    <!-- Obere Bereich - Sektion 1 -->
+	<div class="Sektion-1">	
+		<h1>Willkommen bei "Wer ist da?</h1>
+		<p class="text1">Kinderlieder für die Sprachförderung.</p>
+		<div class="button-container-seite">
+			<a href="Seite1-hörproben.html" class="button-seite">Hörproben</a>
+			<a href="Seite2-überdasBuch.html" class="button-seite">Über das Buch</a>
+			<a href="Seite3-überMich.html" class="button-seite">Über mich</a>
+		</div>
     </div>
-    <h2>Das Album "Wer ist da?" ist auf folgenden Plattformen verfügbar</h2>
-    <div class="button-container-link">
-		<a href="https://www.amazon.de/s?k=wer+ist+da+ritzmeier-stocker&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LBTTO17MWI69&sprefix=wer+ist+da+ritzmeier-stocker%2Caps%2C101&ref=nb_sb_noss_1" class="button-link">Link zu Amazon</a>
-		<a href="https://open.spotify.com/intl-de/album/5WHO6cQUSb44RhFGGea4uN" class="button-link">Link zu Spotify</a>
-    </div>	<p>Das ist eine einfache Textzeile mit "paragraph".</p>
-
+	
+	<!-- Untere Bereich - Sektion 2 -->
+	<div class="Sektion-2">	
+		<h2>Das Album "Wer ist da?" ist auf folgenden Plattformen verfügbar</h2>
+		<div class="button-container-link">
+			<a href="https://www.amazon.de/s?k=wer+ist+da+ritzmeier-stocker&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LBTTO17MWI69&sprefix=wer+ist+da+ritzmeier-stocker%2Caps%2C101&ref=nb_sb_noss_1" class="button-link">Link zu Amazon</a>
+			<a href="https://open.spotify.com/intl-de/album/5WHO6cQUSb44RhFGGea4uN" class="button-link">Link zu Spotify</a>
+		</div>
+		<p class="text2">Viel vergnügen beim hören und mitsingen!</p>
+		</div>
+ 
 </body>
 </html>
