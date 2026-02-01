@@ -2,8 +2,15 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Songs – Hörproben</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seite 1</title>
+    <title>Seite 1 - Hörproben</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,16 +51,175 @@
     </style>
 </head>
 <body>
-    <h1>Hörproben zu "Wer ist da?</h1>
+    <h1>🎵 Hörproben zu "Wer ist da?</h1>
 	<h2>Kinderlieder für die Sprachförderung.</h2>
+	<h2>Wähle ein Lied aus und höre dir die Hörprobe an.</h2>
 	
-	<div style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;">
-		<img src="Bild-19-Notenschlüssel-CLEF_01.jpg" alt="Beispielbild" style="width: 15vw; height: auto;">
-		<p class="text-p2">
-			Hörproben werden voraussichtlich Ende März 2026 hier zur Verfügung gestellt.
-		</p>
-	</div>
-    
+   <!-- MAIN -->
+    <div class="container mb-5">
+
+        <div class="row g-4">
+
+            <!-- 1: Wer ist da? -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="wer_ist_da.png" class="card-img-top" alt="Wer ist da?">
+                    <div class="card-body">
+                        <h5 class="card-title">Wer ist da?</h5>
+                        <audio controls class="w-100">
+                            <source src="1Wer_ist_da.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2: Was ist Rot? -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="was_ist_rot.png" class="card-img-top" alt="Was ist Rot?">
+                    <div class="card-body">
+                        <h5 class="card-title">Was ist Rot?</h5>
+                        <audio controls class="w-100">
+                            <source src="2Was_ist_Rot.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3: Hüpfen -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="verben_huepfen.png" class="card-img-top" alt="Hüpfen">
+                    <div class="card-body">
+                        <h5 class="card-title">Lied von den Verben (Hüpfen)</h5>
+                        <audio controls class="w-100">
+                            <source src="3Lied_von_den_Verben_Hüpfen.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4: Laufen -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="verben_laufen.png" class="card-img-top" alt="Laufen">
+                    <div class="card-body">
+                        <h5 class="card-title">Lied von den Verben (Laufen)</h5>
+                        <audio controls class="w-100">
+                            <source src="4Lied_von_den_Verben_Laufen.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5: Gehen -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="verben_gehen.png" class="card-img-top" alt="Gehen">
+                    <div class="card-body">
+                        <h5 class="card-title">Lied von den Verben (Gehen)</h5>
+                        <audio controls class="w-100">
+                            <source src="5Lied_von_den_Verben_Gehen.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6: Teil 2 -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="verben_teil2.png" class="card-img-top" alt="Teil 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Lied von den Verben (Teil 2)</h5>
+                        <audio controls class="w-100">
+                            <source src="6Lied_von_den_Verben_Teil_2.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7: Dinolied -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="dinolied.png" class="card-img-top" alt="Dinolied">
+                    <div class="card-body">
+                        <h5 class="card-title">Dinolied</h5>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/dinolied.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8: Spiel mit mir -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="spiel_mit_mir.png" class="card-img-top" alt="Spiel mit mir!">
+                    <div class="card-body">
+                        <h5 class="card-title">Spiel mit mir!</h5>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/spiel_mit_mir.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9: Anziehsong -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="anziehsong.png" class="card-img-top" alt="Anziehsong">
+                    <div class="card-body">
+                        <h5 class="card-title">Anziehsong</h5>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/anziehsong.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10: Ich fürchte mich so -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="ich_fuerchte_mich_so.png" class="card-img-top" alt="Ich fürchte mich so!">
+                    <div class="card-body">
+                        <h5 class="card-title">Ich fürchte mich so!</h5>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/ich_fuerchte_mich_so.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11: Ich gehe in den Kindergarten -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="ich_gehe_in_den_kindergarten.png" class="card-img-top" alt="Ich gehe in den Kindergarten">
+                    <div class="card-body">
+                        <h5 class="card-title">Ich gehe in den Kindergarten</h5>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/ich_gehe_in_den_kindergarten.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12: Wir lesen alle -->
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="wir_lesen_alle.png" class="card-img-top" alt="Wir lesen alle!">
+                    <div class="card-body">
+                        <h5 class="card-title">Wir lesen alle!</h5>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/wir_lesen_alle.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 	<a href="index.html">Zurück zur Hauptseite</a>
 	
 	<footer style="text-align: center;font-size: 1vw;margin-top: 40px">
